@@ -53,4 +53,4 @@ def get_money_quotes(apiKey):
     """Return a random money quotes"""
     if apiKey != "12345":
         return {"error": "Invalid API key"}
-    return {"money_quotes": {random.choice(money_quotes)}}
+    return {"money_quotes": random.choice(money_quotes)}
